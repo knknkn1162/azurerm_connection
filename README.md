@@ -7,7 +7,7 @@
 
 
 + azurerm_postgresql_flexible_server
-  + Network with private access (virtual network integration) https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/concepts-networking-private
+  + Network with private access (virtual network integration): https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/concepts-networking-private
     + public_network_access_enabled=false
-  + networking with Private Link
+  + networking with Private Link: https://learn.microsoft.com/ja-jp/azure/postgresql/flexible-server/concepts-networking-private-link
     + public_network_access_enabled=true + private_endpoint
