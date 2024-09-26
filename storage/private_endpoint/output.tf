@@ -27,7 +27,7 @@ output "create_container_command" {
 az login
 az config set extension.dynamic_install_allow_preview=true 
 az storage container create --name ${local.container_name} --connection-string ${module.storage.connection_string}
-az storage blob directory upload --account-name ${module.storage.name} --container ${local.container_name} --source ${local.src_file} --destination ${directory} --account-key ${module.storage.key}
+az storage blob directory upload --account-name ${module.storage.name} --container ${local.container_name} --source ${local.src_file} --destination ${local.directory} --account-key ${module.storage.key}
 # check
 az storage blob directory list --container-name ${local.container_name} -d ${local.directory} --account-name ${module.storage.name} --account-key ${module.storage.key}
 EOF
